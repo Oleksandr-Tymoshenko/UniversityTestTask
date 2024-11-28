@@ -30,3 +30,30 @@ databaseChangeLog:
               - column:
                   name: lector_id
                   value: 1
+        - insert:
+            tableName: departments_lectors
+            columns:
+              - column:
+                  name: department_id
+                  value: 3
+              - column:
+                  name: lector_id
+                  value: 3
+        - insert:
+            tableName: departments_lectors
+            columns:
+              - column:
+                  name: department_id
+                  value: 4
+              - column:
+                  name: lector_id
+                  value: 4
+        - insert:
+            tableName: departments_lectors
+            columns:
+              - column:
+                  name: department_id
+                  value: 4
+              - column:
+                  name: lector_id
+                  value: 2

@@ -39,6 +39,10 @@ public class GlobalSearchCommand implements Command {
         if (StringUtils.isNotBlank(lectorsFullNames)) {
             System.out.printf("Lectors: %s%n", lectorsFullNames);
         }
+
+        if (StringUtils.isBlank(departmentNames) && StringUtils.isBlank(lectorsFullNames)) {
+            System.out.println("Nothing was found");
+        }
     }
 
     private <T> String extractNamesFromList(

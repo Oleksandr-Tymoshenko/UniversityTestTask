@@ -39,3 +39,39 @@ databaseChangeLog:
               - column:
                   name: degree
                   value: "ASSISTANT"
+        - insert:
+            tableName: lectors
+            columns:
+              - column:
+                  name: id
+                  value: 3
+              - column:
+                  name: first_name
+                  value: "Alice"
+              - column:
+                  name: last_name
+                  value: "Johnson"
+              - column:
+                  name: salary
+                  valueNumeric: 4000.00
+              - column:
+                  name: degree
+                  value: "ASSOCIATE_PROFESSOR"
+        - insert:
+            tableName: lectors
+            columns:
+              - column:
+                  name: id
+                  value: 4
+              - column:
+                  name: first_name
+                  value: "Robert"
+              - column:
+                  name: last_name
+                  value: "Brown"
+              - column:
+                  name: salary
+                  valueNumeric: 4500.00
+              - column:
+                  name: degree
+                  value: "PROFESSOR"
