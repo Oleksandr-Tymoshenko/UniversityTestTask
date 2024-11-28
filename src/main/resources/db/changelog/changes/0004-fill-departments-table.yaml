@@ -1,0 +1,29 @@
+databaseChangeLog:
+  - changeSet:
+      id: fill-departments-table
+      author: oleksandr-tymoshenko
+      changes:
+        - insert:
+            tableName: departments
+            columns:
+              - column:
+                  name: id
+                  value: 1
+              - column:
+                  name: name
+                  value: "Mathematics"
+              - column:
+                  name: head_id
+                  value: 1
+        - insert:
+            tableName: departments
+            columns:
+              - column:
+                  name: id
+                  value: 2
+              - column:
+                  name: name
+                  value: "Physics"
+              - column:
+                  name: head_id
+                  value: 2

@@ -1,0 +1,41 @@
+databaseChangeLog:
+  - changeSet:
+      id: fill-lectors-table
+      author: oleksandr-tymoshenko
+      changes:
+        - insert:
+            tableName: lectors
+            columns:
+              - column:
+                  name: id
+                  value: 1
+              - column:
+                  name: first_name
+                  value: "John"
+              - column:
+                  name: last_name
+                  value: "Doe"
+              - column:
+                  name: salary
+                  valueNumeric: 5000.00
+              - column:
+                  name: degree
+                  value: "PROFESSOR"
+        - insert:
+            tableName: lectors
+            columns:
+              - column:
+                  name: id
+                  value: 2
+              - column:
+                  name: first_name
+                  value: "Jane"
+              - column:
+                  name: last_name
+                  value: "Smith"
+              - column:
+                  name: salary
+                  valueNumeric: 3500.00
+              - column:
+                  name: degree
+                  value: "ASSISTANT"

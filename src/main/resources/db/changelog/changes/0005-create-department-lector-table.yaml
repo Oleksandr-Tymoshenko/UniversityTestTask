@@ -1,0 +1,25 @@
+databaseChangeLog:
+  - changeSet:
+      id: create-department-lector-table
+      author: oleksandr-tymoshenko
+      changes:
+        - createTable:
+            tableName: departments_lectors
+            columns:
+              - column:
+                  name: department_id
+                  type: BIGINT
+                  constraints:
+                    nullable: false
+                    foreignKeyName: fk_department
+                    references: departments(id)
+              - column:
+                  name: lector_id
+                  type: BIGINT
+                  constraints:
+                    nullable: false
+                    foreignKeyName: fk_lector
+                    references: lectors(id)
+        - addPrimaryKey:
+            columnNames: department_id, lector_id
+            tableName: departments_lectors
